@@ -73,8 +73,9 @@ public class MainActivity extends AppCompatActivity {
         danmaku.setTime(danmakuView.getCurrentTime());
         if (withBorder){
             danmaku.borderColor = Color.GREEN;
-            danmakuView.addDanmaku(danmaku);
+
         }
+        danmakuView.addDanmaku(danmaku);
     }
     private void generateSomeDanmaku(){
         new Thread(new Runnable() {
